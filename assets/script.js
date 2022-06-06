@@ -11,10 +11,8 @@ console.log(time);
 var table = $('table');
 
 for (var i = 9; i < 18; i++ ) {
-    // the class of hour.get Id is < currentTime return past, etc.
-    //change parent class
-    // curenntly printing as undefined
-    if (i < time){
+    // determines which class should apply to each time block based on if it is in the past, present, or future
+    if (i > time){
         $('#' + i).removeClass('past');
         $('#' + i).addClass('future');
     }
@@ -22,17 +20,4 @@ for (var i = 9; i < 18; i++ ) {
         $('#' + i).removeClass('past');
         $('#' + i).addClass('present');
     }
-    else {
-        // remains the same, no change needed?
-    }
-
-
-    
 }
-
-    
-$('#9').removeClass('past');
-
-    //this works
-//$('.time-block').removeClass('past');
-//$('.time-block').addClass('future');
