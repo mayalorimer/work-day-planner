@@ -15,3 +15,5 @@ This work day scheduler allows you to add daily tasts to your todo list based on
 - GitHub Pages: https://mayalorimer.github.io/work-day-planner/ 
 
 ## Screenshot
+
+![Screenshot of work day planner](./assets/screenshot.jpg)
