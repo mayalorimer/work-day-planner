@@ -28,6 +28,7 @@ if (todo != null){
         var storedId = todo[i].timeBlock;
         console.log(storedId);
         $("#" + storedId).children().eq(1).text(todo[i].todoItem); 
+        $("#" + storedId).children().eq(1).attr("style", "color: black"); 
     }
 }
 
@@ -61,14 +62,6 @@ $('.saveBtn').click(function(event){
         todoItem: textarea
     }
     localStorage.setItem("todoList", JSON.stringify(todo));
-
-  //  console.log($('.class').val());
-
-
- //   var text = $('textarea').siblings("textarea").val();
- //   var time = $('textarea').siblings("tr").attr("id");
-
-  //  localStorage.setItem(time, JSON.stringify(text)); 
 
 }); 
 
